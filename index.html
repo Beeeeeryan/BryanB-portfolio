@@ -3,14 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | CS Portfolio</title>
+  <title>Bryan Bernardo | CS Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <nav>
-      <h2 class="logo">YourName</h2>
+      <h2 class="logo">Bryan Bernardo</h2>
       <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
@@ -18,15 +25,19 @@
     </nav>
 
     <section class="hero">
+      <p class="badge">Available for internships</p>
       <p class="tag">Computer Science Student</p>
-      <h1>Hi, I'm Your Name.</h1>
+
+      <h1>Hi 👋 I'm Bryan Bernardo.</h1>
+
       <p>
-        I build simple, useful software projects while learning full-stack development,
-        algorithms, and systems programming.
+        I build practical software projects using modern development workflows—including AI coding tools like Claude—
+        while expanding my expertise in full-stack development, algorithms, and systems programming.
       </p>
+
       <div class="buttons">
         <a href="#projects" class="btn primary">View Projects</a>
-        <a href="resume.pdf" class="btn">Resume</a>
+        <a href="assets/2026BryanResumeFinal.pdf" target = "_blank" class="btn">Download Resume</a>
       </div>
     </section>
   </header>
@@ -35,35 +46,85 @@
     <section id="about" class="card">
       <h2>About Me</h2>
       <p>
-        I'm a computer science student interested in web development, backend systems,
-        and building projects that solve real problems. I'm currently looking for
-        internship opportunities where I can learn and contribute.
+        I'm a computer science student at San Francisco State University with experience in
+        front-end development, back-end fundamentals, object-oriented programming, databases,
+        and systems-level programming. I enjoy building clean, useful applications and improving
+        my problem-solving skills through projects and coursework.
       </p>
     </section>
 
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Node.js</span>
+        <span>MySQL</span>
+        <span>C++</span>
+        <span>Java</span>
+        <span>Python</span>
+        <span>Jupyter Notebook</span>
+        <span>MIPS</span>
+        <span>Git</span>
+        <span>GitHub</span>
+      </div>
+    </section>
+
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>Featured Project</h2>
+
+      <article class="featured-project">
+        <div>
+          <p class="tag">Full-Stack Project</p>
+          <h3>E-Commerce Website Application</h3>
+          <p>
+            Designed and developed a generic e-commerce web application using HTML, CSS,
+            Node.js, and MySQL. Built front-end pages and connected back-end features for
+            data management and user interaction.
+          </p>
+
+          <p class="tech">HTML · CSS · Node.js · MySQL</p>
+
+          <div class="project-links">
+            <a href="#">GitHub</a>
+            <a href="#">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <h2 class="section-title">Other Projects</h2>
 
       <div class="grid">
         <article class="project">
           <span>01</span>
-          <h3>Student Task Manager</h3>
-          <p>A web app for tracking assignments, deadlines, and study sessions.</p>
-          <p class="tech">HTML · CSS · JavaScript</p>
+          <h3>Bank Simulator</h3>
+          <p>
+            Built a banking simulator using object-oriented programming concepts in C++.
+            Implemented account-related features and worked with a small team to design
+            user-sensitive functions such as retrieving personal information.
+          </p>
+          <p class="tech">C++</p>
         </article>
 
         <article class="project">
           <span>02</span>
-          <h3>Portfolio Website</h3>
-          <p>A responsive personal website to showcase my projects and experience.</p>
-          <p class="tech">HTML · CSS</p>
+          <h3>Video Game Data Analytics</h3>
+          <p>
+            Used Jupyter Notebook to clean and analyze a Kaggle dataset about video game
+            sales from the 1980s to 2017, then created visualizations to communicate trends.
+          </p>
+          <p class="tech">Python · Jupyter Notebook</p>
         </article>
 
         <article class="project">
           <span>03</span>
-          <h3>Course Project</h3>
-          <p>A school project focused on problem solving, data structures, or systems.</p>
-          <p class="tech">C++ · Java · Python</p>
+          <h3>Portfolio Website</h3>
+          <p>
+            Designed and built a responsive personal portfolio using HTML and CSS to showcase
+            projects, experience, skills, and education.
+          </p>
+          <p class="tech">HTML · CSS</p>
         </article>
       </div>
     </section>
@@ -71,30 +132,45 @@
     <section id="experience" class="card">
       <h2>Experience</h2>
 
-      <div class="item">
-        <h3>Computer Science Student</h3>
-        <p class="muted">San Francisco State University · 2022 - Present</p>
-        <ul>
-          <li>Pursuing a B.A. in Computer Science at San Francisco State University with coursework in data structures, algorithms, computer systems, and software development.</li>
-          <li>Developed projects using Java, C++, HTML, CSS, JavaScript, Node.js, and MySQL, with experience in both front-end and back-end development.</li>
-          <li>Built applications including an e-commerce platform with secure authentication, a C++ banking simulator utilizing object-oriented programming, and data analytics projects using Python and Jupyter Notebook.</li>        </ul>
+      <div class="timeline">
+        <div class="item">
+          <h3>Sales Associate</h3>
+          <p class="muted">San Francisco State University E-Follett Bookstore · June 2022 - September 2024</p>
+        </div>
+
+        <div class="item">
+          <h3>Technology Specialist</h3>
+          <p class="muted">Target · June 2017 - December 2020</p>
+        </div>
       </div>
     </section>
 
     <section class="card">
       <h2>Education</h2>
+
       <div class="item">
         <h3>B.S. Computer Science</h3>
-        <p class="muted">San Francisco State University · Spring 2027</p>
+        <p class="muted">San Francisco State University · Expected Spring 2027</p>
+
+        <ul>
+          <li>Coursework includes data structures, algorithms, computer systems, and software development.</li>
+          <li>Developed projects using Java, C++, HTML, CSS, JavaScript, Node.js, MySQL, and Python.</li>
+          <li>Built projects involving full-stack development, object-oriented programming, and data analytics.</li>
+        </ul>
       </div>
     </section>
 
     <section id="contact" class="contact">
       <h2>Let's Connect</h2>
-      <p>Email: your.email@example.com</p>
       <p>
-        <a href="https://github.com/yourusername">GitHub</a> ·
-        <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
+        I'm currently looking for software engineering internship opportunities and project experience.
+      </p>
+
+      <p>Email: bryanbernardo135@gmail.com</p>
+
+      <p>
+        <a href="https://github.com/Beeeeeryan" target = "_blank">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/bryan-bernardo135" target = "_blank">LinkedIn</a>
       </p>
     </section>
   </main>
